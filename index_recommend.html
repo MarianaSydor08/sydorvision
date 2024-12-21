@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydor Vision Результат</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles_recommend.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <span class="background-demo"></span>
+        <span class="background-demo background-demo--2"></span>
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="img/logo navigation.png" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about"> Про клініку</a></li>
+                    <li><a href="index.html#servise"> Послуги</a></li>
+                    <li><a href="#booking"> Запис на прийом</a></li>
+                    <li><a  href="#contact"> Контакти</a></li>
+                </ul>
+            </nav>
+            <a href="index_register.html"><button class="auth-btn">Мій кабінет</button></a>
+        </div>
+    </header>
+
+    <section class="test">
+        <h1>Чи потрібна вам консультація офтальмолога?</h1>
+
+    </section>
+
+
+
+
+    <main>
+        
+        <section class="content">
+
+            <div class="container-result">
+                <div id="recommendation"></div>
+                <a href="#booking" class="button-booking">
+                    Записатись на консультацію
+                </a>
+            </div>
+
+
+            
+            <article class="attention">
+                
+                <p>Увага! Дана перевірка є приблизним тестом і не може свідчити про наявність або відсутність у Вас будь-якого захворювання. <br> Точний діагноз може встановити лише лікар-офтальмолог після діагностичного обстеження в спеціалізованому медичному центрі!</p>
+            </article>
+        </section>
+        <section class="repeat-test">
+            <a href="index_test.html" class="button-test">Пройти тест ще раз</a>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container booking-container">
+            <h2 >Записатись на прийом</h2>
+            <form>
+                <input class="input" type="text" placeholder="Ваше ім'я" name="name" required>
+                <input class="input" type="tel" placeholder="Ваш телефон" name="name" required>
+                <select name="center">
+                    <option>Офтальмологічний центр, Київ, вул.Грушевського, 18</option>
+                    <option>Офтальмологічний центр, Київ, вул. Шевченка, 201</option>
+                    <option>Офтальмологічний центр, Львів, вул. Бандери, 43</option>
+                    <option>Офтальмологічний центр, Львів, вул. Соборна, 25</option>
+                    <option>Офтальмологічний центр, Вінниця, вул. Хмельницького, 5</option>
+                </select>
+                <input class="button" type="submit"	 value="Записатись"  >
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div id="contact" class="container footer-container">
+            
+            <div class="footer-social">
+                <a href="index.html" class="logo-down"><img src="img/logo navigation.png" alt="Logo"></a>
+                <p>+380968262038</p>
+                <a href="#"><img class="img-logo" src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/mariana__sydor/"><img class="img-logo" src="img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img class="img-logo" src="img/logos.png" alt="Twitter"></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 Sydor Vision. Всі права захищені.</p>
+                <a href="index.html" class="scroll-top">Повернутися вгору</a>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            // Зчитуємо результат із localStorage
+            const result = JSON.parse(localStorage.getItem("patientResult"));
+
+            const recommendationDiv = document.getElementById("recommendation");
+
+            if (result) {
+                recommendationDiv.innerHTML = `
+                    <p><strong>Ймовірність ризику:</strong> ${(result.riskScore * 100).toFixed(0)}%</p>
+                    <p><strong>Статус:</strong> ${result.status}</p>
+                    <p><strong>Рекомендація:</strong> ${result.recommendation}</p>
+                `;
+            } else {
+                recommendationDiv.innerHTML = "<p>Дані відсутні. Пройдіть тест ще раз.</p>";
+            }
+        });
+        
+
+    </script>
+
+
+</body>
+</html>  
+
+
+
+</body>
+</html>

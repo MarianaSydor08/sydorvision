@@ -1,0 +1,239 @@
+
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+
+    line-height: 1.6;
+    color: #333;
+    background-color: #F4ECEA; /* Основний світлий фон */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+
+}
+
+
+
+
+
+/* Header */
+header {
+    background-color: #BB4E6D; /* Ніжний рожевий */
+    border-bottom: 1px solid #BB4E6D; /* Акцентний темний бордовий */
+    padding: 15px 0;
+    
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: #F4ECEA;
+    transition: color 0.3s ease;
+    margin: 20px;    
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li a:hover {
+    color: #E9B0BB; 
+        /*то слова на навігації*/
+}
+
+.auth-btn {
+    background-color: #F4ECEA;
+    font-size: 20px;
+    font-weight: 700;
+    color: #BB4E6D;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: #E9B0BB; /*то кнопка авторизації*/
+    color: #333;
+}
+
+
+.container-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+
+}
+
+
+
+
+
+/* Секція реєстрації */
+.register-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Щоб форма була ближче до низу */
+    padding: 20px;
+    background-color: #F4ECEA;
+}
+
+/* Заголовок */
+.register-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #BB4E6D;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Форма */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Поля вводу */
+.register-form label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.register-form input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Кнопка */
+.register-button {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #BB4E6D;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 2px;
+}
+
+.register-button:hover {
+    background-color: #E9B0BB;
+    color: #333;
+}
+
+/* Адаптивність */
+@media (max-width: 480px) {
+    .register-form {
+        padding: 20px;
+    }
+
+    .register-title {
+        font-size: 28px;
+    }
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #BB4E6D;
+    color: #F4ECEA;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #F4ECEA;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+
+
+.scroll-top {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #F4ECEA;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    padding: 20px 0px;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-social a  {
+    margin: 20px 60px;
+    
+}
+
+.img-logo  {
+    width: 45px;
+}
+
+.footer-social p{
+        font-size: 20px;
+        margin: 40px;
+
+}

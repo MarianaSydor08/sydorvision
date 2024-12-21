@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydor Vision Головна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <span class="background-demo"></span>
+        <span class="background-demo background-demo--2"></span>
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="img/logo navigation.png" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#about"> Про клініку</a></li>
+                    <li><a href="#servise"> Послуги</a></li>
+                    <li><a href="#booking"> Запис на прийом</a></li>
+                    <li><a href="#contact"> Контакти</a></li>
+                </ul>
+            </nav>
+            <a href="index_register.html"><button class="auth-btn">Мій кабінет</button></a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="about">SYDOR VISION  —  піклуємось про Ваш зір з 2015 року</h1>
+                <p>Мережа сучасних офтальмологічних центрів для всієї родини</p>
+                <div class="photki">
+                    <img src="img/очкиjpg.jpg" alt="Photo">
+                    <img src="img/два челаjpg.jpg" alt="Photo">
+                    <img src="img/лікаркаjpg.jpg" alt="Photo">
+                    <img src="img/людина з очками.jpg" alt="Photo">
+                    
+                </div>
+                <form action="index_test.html" target="_blank" method='post' >
+                    <button class="consultation-btn">Чи потрібна вам консультація лікаря?</button>
+                </form>
+               
+                <p class="sub-text">Це швидкий безкоштовний тест, який допоможе Вам визначити,<br> чи є необхідність у консультації лікаря-офтальмолога для Вас або членів Вашої родини.<br> На основі результатів тесту Ви зможете отримати попередню оцінку стану зору <br>та рекомендації щодо подальших дій.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container container-services">
+            <h2 id="servise">Наші послуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Діагностика зору</h3>
+                    <p>Високоточна діагностика за сучасними стандартами.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Корекція зору</h3>
+                    <p>Підбір окулярів та контактних лінз для оптимальної корекції зору.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Лазерна корекція</h3>
+                    <p>Сучасні методи лазерної хірургії для відновлення зору.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Лікування захворювань</h3>
+                    <p>Ефективне лікування глаукоми, катаракти та інших захворювань очей.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Дитяча офтальмологія</h3>
+                    <p>Комплексна діагностика та лікування порушень зору у дітей різного віку.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container booking-container">
+            <h2 >Записатись на прийом</h2>
+            <form>
+                <input class="input" type="text" placeholder="Ваше ім'я" name="name" required>
+                <input class="input" type="tel" placeholder="Ваш телефон" name="name" required>
+                <select name="center">
+                    <option>Офтальмологічний центр, Київ, вул.Грушевського, 18</option>
+                    <option>Офтальмологічний центр, Київ, вул. Шевченка, 201</option>
+                    <option>Офтальмологічний центр, Львів, вул. Бандери, 43</option>
+                    <option>Офтальмологічний центр, Львів, вул. Соборна, 25</option>
+                    <option>Офтальмологічний центр, Вінниця, вул. Хмельницького, 5</option>
+                </select>
+                <input class="button" type="submit"	 value="Записатись"  >
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div id="contact" class="container footer-container">
+            
+            <div class="footer-social">
+                <a href="index.html" class="logo-down"><img src="img/logo navigation.png" alt="Logo"></a>
+                <p>+380968262038</p>
+                <a href="#"><img class="img-logo" src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/mariana__sydor/"><img class="img-logo" src="img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img class="img-logo" src="img/logos.png" alt="Twitter"></a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 Sydor Vision. Всі права захищені.</p>
+                <a href="index.html" class="scroll-top">Повернутися вгору</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
