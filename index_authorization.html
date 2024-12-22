@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sydor Vision Реєстрація</title>
+    <title>Sydor Vision Авторизація</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles_register.css">
+    <link rel="stylesheet" href="css/styles_authorization.css">
 </head>
 <body>
     <!-- Header -->
@@ -30,24 +30,27 @@
 
 
 
-    <!-- Register -->
+    <!-- Authorization -->
     <section class="register-section">
-        <h1 class="register-title">Реєстрація</h1>
+        <!-- <h1 class="register-title">ВХІД</h1> -->
+
         <form class="register-form">
-            <label for="first-name">Ім'я:</label>
-            <input type="text" id="first-name" name="first-name" placeholder="Введіть ваше ім'я" required />
-    
-            <label for="last-name">Прізвище:</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Введіть ваше прізвище" required />
-    
+              
             <label for="email">Електронна пошта:</label>
             <input type="email" id="email" name="email" placeholder="Введіть вашу пошту" required />
     
             <label for="password">Пароль:</label>
             <input type="password" id="password" name="password" placeholder="Введіть ваш пароль" required />
     
-            <button type="submit" class="register-button">Зареєструватися</button>
+            <button type="submit" class="register-button">Увійти</button>
+
+
+            
         </form>
+
+        <a href="index_register.html" > <button class="button-registr" > Реєстрація </button> </a>
+
+
     </section>
 
 
@@ -66,13 +69,11 @@
             </div>
             <div class="footer-info">
                 <p>&copy; 2024 Sydor Vision. Всі права захищені.</p>
-                <a href="index.html" class="scroll-top">Повернутися вгору</a>
             </div>
         </div>
     </footer>
 
-
-    <script src="js/script_register.js"></script>
+    <script src="js/script_authorization.js"></script>
 
 
 </body>
